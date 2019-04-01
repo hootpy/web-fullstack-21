@@ -1,0 +1,40 @@
+p.abc {
+    color: #ff00f2;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    border-color: aquamarine;
+    border-style: dotted;
+    border-width: 2px;
+}
+
+.text-red,ol{
+    color: blanchedalmond;
+}
+
+#top{
+    color: aqua;
+}
+
+input[type=text]{
+    background: #ff00f2;
+}
+
+ul li{
+    color: blueviolet;
+}
+
+ul > li {
+    color: aqua;
+}
+
+a.top:hover {
+    color: chocolate;
+}
+
+img:hover{
+    width: 50%;
+}
+
+ul li:nth-child(2){
+    color: darkgoldenrod;
+}
