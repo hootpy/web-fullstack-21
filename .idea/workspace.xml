@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91aa071d-34a5-44ff-bbe1-5297bb58dfa8" name="Default Changelist" comment="nothing">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodejs/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodejs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodejs/public/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodejs/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodejs/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodejs/views/data.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodejs/views/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodejs/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodejs/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodejs/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodejs/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodejs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodejs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodejs/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodejs/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,20 +25,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodejs/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="291">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodejs/index.html">
+        <entry file="file://$PROJECT_DIR$/nodejs/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nodejs/views/data.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -49,6 +59,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Pug File" />
       </list>
     </option>
   </component>
@@ -73,10 +84,12 @@
         <option value="$PROJECT_DIR$/Homework/session 1/js-practices/Practice2/sortPractice.js" />
         <option value="$PROJECT_DIR$/Homework/session 1/js-practices/Practice3/generatePractice.js" />
         <option value="$PROJECT_DIR$/html/index.html" />
-        <option value="$PROJECT_DIR$/nodejs/app.js" />
         <option value="$PROJECT_DIR$/nodejs/html &amp; css/index.html" />
         <option value="$PROJECT_DIR$/nodejs/public/index.html" />
+        <option value="$PROJECT_DIR$/nodejs/views/index.pug" />
+        <option value="$PROJECT_DIR$/nodejs/app.js" />
         <option value="$PROJECT_DIR$/nodejs/server.js" />
+        <option value="$PROJECT_DIR$/nodejs/views/data.pug" />
       </list>
     </option>
   </component>
@@ -93,7 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,6 +122,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,11 +202,12 @@
       <workItem from="1553865751509" duration="177000" />
       <workItem from="1554122138744" duration="3725000" />
       <workItem from="1554126625712" duration="4065000" />
+      <workItem from="1554190641122" duration="3673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28102000" />
+    <option name="totallyTimeSpent" value="31775000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -205,11 +219,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="809" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="809" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49930266" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49688148" weight="0.24947146" />
       <window_info id="Structure" order="1" sideWeight="0.5006974" side_tool="true" weight="0.24947146" />
-      <window_info id="Favorites" order="2" sideWeight="0.5006974" side_tool="true" weight="0.24947146" />
+      <window_info id="Favorites" order="2" sideWeight="0.5031185" side_tool="true" weight="0.24947146" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32914925" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32914925" />
@@ -219,12 +234,31 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32914925" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32914925" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32914925" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32914925" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49930266" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" sideWeight="0.5006974" side_tool="true" weight="0.24947146" />
+      <window_info id="Favorites" order="2" sideWeight="0.5006974" side_tool="true" weight="0.24947146" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32914925" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32914925" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32914925" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32914925" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32914925" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -364,13 +398,6 @@
     <entry file="file://$PROJECT_DIR$/nodejs/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodejs/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodejs/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -378,10 +405,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs/data/web13.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs/views/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nodejs/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="291">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodejs/views/data.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>

@@ -28,5 +28,7 @@ const jsonObj = JSON.stringify(obj);
 //     });
 
 
-const a = fs.readFileSync("test.json",{encoding: "utf-8"});
-console.log(JSON.parse(a).name);
+// const a = fs.readFileSync("test.json",{encoding: "utf-8"});
+// console.log(JSON.parse(a).name);
+const data = fs.readFileSync(__dirname + "/data/" + "web13" + ".json",{encoding: "utf-8"})
+console.log(data)
