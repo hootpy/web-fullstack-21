@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quyet de 123</title>
+</head>
+<body>
+    <h1>ASK SOMETHING IF IS YES OR NO!!!</h1>
+    <form action="/addquestion" method="POST">
+        <textarea name="question" maxlength="200" id="" cols="30" rows="10"></textarea>
+        <span id="abc">200/200 CHARACTER LEFT</span>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script>
+    document.querySelector("textarea").addEventListener("input",function () {
+        let character_count = 200 - this.textLength
+        document.querySelector("span").innerText = `${character_count}/200 CHARACTER LEFT`
+    })
+    
+</script>
+</html>

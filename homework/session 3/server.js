@@ -2,46 +2,32 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 
-
-
-
-
-app.set('view engine', 'pug')
-
-
-app.use(express.static(__dirname + '/public'));
-
-app.get("/",function (req,res) {
-    var classList = [];
-    const dataFolder = './data/';
-    fs.readdirSync(dataFolder).forEach(file => {
-        classList.push(file.replace(".json",""));
-    });
-    res.render('index',{title: "Fullstack 21",value: classList});
+app.get("/",function(req,res){
+    res.send(`
+    <h1>
+    <ul>
+        <li><a href="/web13">Web 13</a></li>
+        <li><a href="/web14">Web 14</a></li>
+        <li><a href="/web15">Web 15</a></li>
+        <li><a href="/web16">Web 16</a></li>
+        <li><a href="/web17">Web 17</a></li>
+        <li><a href="/web18">Web 18</a></li>
+</ul>
+</h1>
+    `)
 })
 
-app.get("/:className", function (req,res) {
-    const className = req.params.className;
-    const data = JSON.parse(fs.readFileSync(__dirname + "/data/" + className + ".json",{encoding: "utf-8"}))
-    res.render('data',{title: "Fullstack 21", value: data});
-})
-
-// //http://127.0.0.1:8008/number?number=3
-//
-// app.get("/number",function (req,res) {
-//     const number = req.query.number;
-//     res.send(number);
-// })
-//
-// app.get("/:number/:number1",function (req,res) {
-//     const number = req.params.number;
-//     res.send(number);
-// })
-
-
-//Middleware
-app.use(function (req,res) {
-    res.send("404 Not Found!!!");
+app.get("/:name",function (req,res){
+    const { name } = req.params;
+    const fileData = fs.readFileSync(`./data/${name}.json`, { encoding: 'utf-8' });
+    const dataArr = JSON.parse(fileData);
+    let html = "<ul>";
+    for(let i = 0; i < dataArr.length; i ++){
+        let item = dataArr[i];
+        html = html + `<li>${item}</li>`
+    }
+    html = html + "</ul>"
+    res.send(html)
 })
 
 
