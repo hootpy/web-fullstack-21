@@ -9,21 +9,27 @@ app.use(bodyParse.urlencoded())
 app.get("/",function(req,res){
     //get random question
     const questions = JSON.parse(fs.readFileSync("questions.json", {encoding:"utf-8"}));
-    const randomQuestionNumber = Math.floor(Math.random()*questions.length);
-    const question = questions[randomQuestionNumber];
-    res.send(`
+    if(questions.length === 0){
+        res.redirect("/ask")
+    } else {
+        const randomQuestionNumber = Math.floor(Math.random()*questions.length);
+        const question = questions[randomQuestionNumber];
+        res.send(`
     <h1>${question.question}</h1>
+    <div>
     <form action="/questions" method="post">
     <input type="text" name="questionNumber" value="${randomQuestionNumber}" hidden></input>
     <a><button name="answer" value="yes">Yes</button></a>
     <a><button name="answer" value="no">No</button></a>
 </form>
-    
+</div>
+    <div>
     <a href="/question/${randomQuestionNumber}">Ket qua vote</a>
     <a href="/">Cau hoi khac</a>
     <a href="/ask">Dat cau hoi</a>
-    `)
-
+</div>
+`)
+    }
 });
 
 app.get("/ask",function (req,res) {
@@ -44,7 +50,8 @@ app.post("/addquestion",function (req,res) {
     }
     questions.push(newQuestion);
     fs.writeFileSync( "./questions.json",JSON.stringify(questions));
-    res.send("Thank you for your question!")
+    let url = `/question/${questions.length - 1}`
+    res.redirect(url)
 })
 
 
