@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Quyet de 123</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous">
+    </script>
 </head>
 <body>
     <h1>ASK SOMETHING IF IS YES OR NO!!!</h1>
@@ -13,10 +18,9 @@
     </form>
 </body>
 <script>
-    document.querySelector("textarea").addEventListener("input",function () {
-        let character_count = 200 - this.textLength
-        document.querySelector("span").innerText = `${character_count}/200 CHARACTER LEFT`
+    $("textarea").on("input",function () {
+        const character_count = 200 - $("textarea").val().length
+        $("span").html(`${character_count}/200 CHARACTER LEFT`)
     })
-    
 </script>
 </html>

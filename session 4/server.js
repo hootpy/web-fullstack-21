@@ -8,29 +8,33 @@ const bodyParse = require('body-parser')
 app.use(bodyParse.urlencoded())
 app.get("/",function(req,res){
     //get random question
-    const questions = JSON.parse(fs.readFileSync("questions.json", {encoding:"utf-8"}));
-    if(questions.length === 0){
-        res.redirect("/ask")
-    } else {
-        const randomQuestionNumber = Math.floor(Math.random()*questions.length);
-        const question = questions[randomQuestionNumber];
-        res.send(`
-    <h1>${question.question}</h1>
-    <div>
-    <form action="/questions" method="post">
-    <input type="text" name="questionNumber" value="${randomQuestionNumber}" hidden></input>
-    <a><button name="answer" value="yes">Yes</button></a>
-    <a><button name="answer" value="no">No</button></a>
-</form>
-</div>
-    <div>
-    <a href="/question/${randomQuestionNumber}">Ket qua vote</a>
-    <a href="/">Cau hoi khac</a>
-    <a href="/ask">Dat cau hoi</a>
-</div>
-`)
-    }
+    res.sendFile(__dirname + "/view/home.html")
 });
+
+app.get("/vote/:id/:vote", (req,res) =>{
+    const { id, vote} = req.params;
+    const questionList = JSON.parse(
+        fs.readFileSync("./questions.json", { encoding: "utf-8"})
+    );
+    if (vote === "yes"){
+        questionList[id].yes++;
+    } else {
+        questionList[id].no++;
+    }
+    fs.writeFileSync("./questions.json", JSON.stringify(questionList));
+    const url = `/question/${id}`
+    res.redirect(url);
+})
+
+
+
+
+app.get("/randomquestion",(req,res) => {
+    const questions = JSON.parse(fs.readFileSync("questions.json", {encoding:"utf-8"}));
+    const randomQuestionNumber = Math.floor(Math.random()*questions.length);
+    const question = questions[randomQuestionNumber];
+    res.send(question)
+})
 
 app.get("/ask",function (req,res) {
     //ask random question
@@ -54,41 +58,15 @@ app.post("/addquestion",function (req,res) {
     res.redirect(url)
 })
 
-
-app.get("/question/:question_number",function (req,res) {
-    const {question_number} = req.params
+app.get("/getquestioninfo",(req,res) => {
+    const id = req.query.id;
     const questions = JSON.parse(fs.readFileSync("questions.json", {encoding:"utf-8"}))
-    if (question_number >= questions.length) {
-        res.send("Wrong question");
-    } else {
-        const question = questions[question_number];
-        const question_text= question.question;
-        const yes_number = question.yes;
-        const no_number = question.no;
-        res.send(`
-        <h1>${question_text}</h1>
-        <span>${yes_number}</span>
-        <span>${no_number}</span>
-        <a href="/"><button>Xem cau hoi khac</button></a>
-        `);
-    }
+    res.send(questions[id])
 })
 
-app.post("/questions",function (req,res) {
-    const {questionNumber} = req.body
-    const {answer} = req.body
-    const questions = JSON.parse(fs.readFileSync("questions.json", {encoding:"utf-8"}))
-    const question = questions[questionNumber]
-    if(answer === "yes"){
-        question.yes += 1;
-    } else if (answer === "no"){
-        question.no += 1;
-    }
-    fs.writeFileSync( "./questions.json",JSON.stringify(questions));
-    const url = `/question/${questionNumber}`
-    res.redirect(url)
+app.get("/question/:i",(req,res) =>{
+    res.sendFile(__dirname + "/view/question.html")
 })
-
 
 
 

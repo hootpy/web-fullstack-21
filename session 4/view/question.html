@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<h1 id="question"></h1>
+<div id="yes"></div>
+<div id="no"></div>
+<a href="/"><button>Xem cau hoi khac</button></a>
+<script>
+    const questionID = window.location.pathname.replace("/question/","").replace("/","");
+    $.ajax({
+            url:`/getquestioninfo?id=${questionID}`,
+        method: 'GET',
+        success: function (data) {
+            $('#question').html(data.question);
+            $('#yes').html(data.yes);
+            $('#no').html(data.no);
+        },
+        error: function (err) {
+            console.log(err)
+        }
+    }
+    )
+</script>
+</body>
+</html>

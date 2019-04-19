@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="content"></h1>
+<div>
+    <a href="#" id="no">
+        <button>NO</button>
+    </a>
+    <a href="#" id="yes">
+        <button>YES</button>
+    </a>
+</div>
+<div>
+    <a href="#" id="voteResult">Ket qua vote</a>
+    <a href="/">Cau hoi khac</a>
+    <a href="/ask">Dat cau hoi</a>
+</div>
+<script>
+    $.ajax({
+        url: "/randomquestion",
+        type: 'GET',
+        success: function (data) {
+            $("#content").html(data.question)
+            $("#yes").attr("href",`vote/${data.id}/yes`)
+            $("#no").attr("href",`vote/${data.id}/no`)
+            $("#voteResult").attr("href",`/question/${data.id}`)
+        },
+        error: function (err) {
+            console.log(err)
+        }
+    });
+</script>
+</body>
+</html>
