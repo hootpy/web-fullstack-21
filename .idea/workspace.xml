@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91aa071d-34a5-44ff-bbe1-5297bb58dfa8" name="Default Changelist" comment="nothing">
-      <change afterPath="$PROJECT_DIR$/session 4/view/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session 4/view/question.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session6/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session 4/models/questionModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/fullstack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fullstack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session 4/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/session 4/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session 4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/session 4/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session 4/questions.json" beforeDir="false" afterPath="$PROJECT_DIR$/session 4/questions.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/session 4/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/session 4/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session 4/view/ask.html" beforeDir="false" afterPath="$PROJECT_DIR$/session 4/view/ask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session 4/view/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/session 4/view/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session 4/view/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/session 4/view/question.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session6/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/session6/package.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,8 +29,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session 4/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="-41">
+              <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+              <folding>
+                <element signature="e#399#424#0" />
+                <element signature="e#1004#1039#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/session 4/view/question.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -52,10 +54,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Pug File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="package.json" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -98,10 +100,11 @@
         <option value="$PROJECT_DIR$/homework/session 5/css/style.css" />
         <option value="$PROJECT_DIR$/session6/package.json" />
         <option value="$PROJECT_DIR$/session 4/package.json" />
-        <option value="$PROJECT_DIR$/session 4/view/home.html" />
-        <option value="$PROJECT_DIR$/session 4/server.js" />
         <option value="$PROJECT_DIR$/session 4/view/ask.html" />
         <option value="$PROJECT_DIR$/html &amp; css/main.css" />
+        <option value="$PROJECT_DIR$/session 4/models/questionModel.js" />
+        <option value="$PROJECT_DIR$/session 4/server.js" />
+        <option value="$PROJECT_DIR$/session 4/view/home.html" />
         <option value="$PROJECT_DIR$/session 4/view/question.html" />
       </list>
     </option>
@@ -125,7 +128,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,12 +138,13 @@
             <path>
               <item name="Web 21" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web 21" type="462c0819:PsiDirectoryNode" />
-              <item name="html &amp; css" type="462c0819:PsiDirectoryNode" />
+              <item name="session 4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Web 21" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web 21" type="462c0819:PsiDirectoryNode" />
               <item name="session 4" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Web 21" type="b2602c69:ProjectViewProjectNode" />
@@ -153,6 +156,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,11 +257,13 @@
       <workItem from="1555477265680" duration="134000" />
       <workItem from="1555477439868" duration="348000" />
       <workItem from="1555664765237" duration="92000" />
+      <workItem from="1555677356496" duration="7762000" />
+      <workItem from="1555922683001" duration="1027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64212000" />
+    <option name="totallyTimeSpent" value="73001000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -536,34 +542,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/session6/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session 4/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session 4/questions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session 4/view/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/session6/package.json" />
     <entry file="file://$PROJECT_DIR$/nodejs/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -578,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/session 4/view/ask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html &amp; css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -592,17 +564,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/session 4/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session 4/questions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session 4/view/ask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session 4/models/questionModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session 4/view/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/session 4/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="-41">
+          <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+          <folding>
+            <element signature="e#399#424#0" />
+            <element signature="e#1004#1039#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/session 4/view/question.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>

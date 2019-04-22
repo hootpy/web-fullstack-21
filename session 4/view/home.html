@@ -31,9 +31,9 @@
         type: 'GET',
         success: function (data) {
             $("#content").html(data.question)
-            $("#yes").attr("href",`vote/${data.id}/yes`)
-            $("#no").attr("href",`vote/${data.id}/no`)
-            $("#voteResult").attr("href",`/question/${data.id}`)
+            $("#yes").attr("href",`vote/${data.index}/yes`)
+            $("#no").attr("href",`vote/${data.index}/no`)
+            $("#voteResult").attr("href",`/question/${data.index}`)
         },
         error: function (err) {
             console.log(err)

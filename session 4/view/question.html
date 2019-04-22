@@ -17,17 +17,18 @@
     const questionID = window.location.pathname.replace("/question/","").replace("/","");
     $.ajax({
             url:`/getquestioninfo?id=${questionID}`,
-        method: 'GET',
-        success: function (data) {
-            $('#question').html(data.question);
-            $('#yes').html(data.yes);
-            $('#no').html(data.no);
-        },
-        error: function (err) {
-            console.log(err)
+            method: 'GET',
+            success: function (data) {
+                $('#question').html(data.question);
+                $('#yes').html(data.yes);
+                $('#no').html(data.no);
+            },
+            error: function (err) {
+                console.log(err)
+            }
         }
-    }
     )
+
 </script>
 </body>
 </html>
