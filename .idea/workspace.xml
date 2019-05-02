@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91aa071d-34a5-44ff-bbe1-5297bb58dfa8" name="Default Changelist" comment="nothing">
-      <change afterPath="$PROJECT_DIR$/session 4/models/questionModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session 4/view/test1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/fullstack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fullstack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session 4/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/session 4/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session 4/view/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/session 4/view/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session 4/view/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/session 4/view/question.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session6/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/session6/package.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,23 +22,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/session 4/server.js">
+        <entry file="file://$PROJECT_DIR$/session 4/view/ask.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-41">
-              <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
-              <folding>
-                <element signature="e#399#424#0" />
-                <element signature="e#1004#1039#0" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="52" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/session 4/view/question.html">
+        <entry file="file://$PROJECT_DIR$/session 4/view/test1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="1305">
+              <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
+              <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,8 +63,8 @@
         <option value="Pug File" />
         <option value="CSS File" />
         <option value="package.json" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -100,12 +107,14 @@
         <option value="$PROJECT_DIR$/homework/session 5/css/style.css" />
         <option value="$PROJECT_DIR$/session6/package.json" />
         <option value="$PROJECT_DIR$/session 4/package.json" />
-        <option value="$PROJECT_DIR$/session 4/view/ask.html" />
         <option value="$PROJECT_DIR$/html &amp; css/main.css" />
         <option value="$PROJECT_DIR$/session 4/models/questionModel.js" />
         <option value="$PROJECT_DIR$/session 4/server.js" />
-        <option value="$PROJECT_DIR$/session 4/view/home.html" />
         <option value="$PROJECT_DIR$/session 4/view/question.html" />
+        <option value="$PROJECT_DIR$/session 4/view/home.html" />
+        <option value="$PROJECT_DIR$/session 4/view/testbt.html" />
+        <option value="$PROJECT_DIR$/session 4/view/ask.html" />
+        <option value="$PROJECT_DIR$/session 4/view/test1.html" />
       </list>
     </option>
   </component>
@@ -139,18 +148,6 @@
               <item name="Web 21" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web 21" type="462c0819:PsiDirectoryNode" />
               <item name="session 4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web 21" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web 21" type="462c0819:PsiDirectoryNode" />
-              <item name="session 4" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web 21" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web 21" type="462c0819:PsiDirectoryNode" />
-              <item name="session 4" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,11 +256,15 @@
       <workItem from="1555664765237" duration="92000" />
       <workItem from="1555677356496" duration="7762000" />
       <workItem from="1555922683001" duration="1027000" />
+      <workItem from="1555935587449" duration="895000" />
+      <workItem from="1555937621459" duration="102000" />
+      <workItem from="1555937740649" duration="4333000" />
+      <workItem from="1556187269888" duration="1677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73001000" />
+    <option name="totallyTimeSpent" value="80008000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,7 +277,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="809" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49688148" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" sideWeight="0.5006974" side_tool="true" weight="0.24947146" />
@@ -578,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/session 4/view/ask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/session 4/models/questionModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -592,28 +585,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/session 4/view/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/session 4/view/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        <state relative-caret-position="294">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/session 4/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-41">
-          <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+        <state relative-caret-position="430">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
           <folding>
             <element signature="e#399#424#0" />
-            <element signature="e#1004#1039#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/session 4/view/question.html">
+    <entry file="file://$PROJECT_DIR$/session 4/view/testbt.html" />
+    <entry file="file://$PROJECT_DIR$/session 4/view/ask.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session 4/view/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
