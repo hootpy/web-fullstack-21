@@ -6,7 +6,6 @@ $("#submit").on("click",function () {
         $("#player3").val(),
         $("#player4").val()
     ];
-    console.log(playerList)
     $.ajax({
         url: "/create-game",
         type: "POST",
@@ -41,7 +40,6 @@ $.ajax({
     url: `/getgame/${gameId}`,
     method: 'GET',
     success: function (data) {
-        console.log(data.playerName)
         $('th#player1').text(data.playerName[0])
         $('th#player2').text(data.playerName[1])
         $('th#player3').text(data.playerName[2])
@@ -77,10 +75,36 @@ $('button#add-round').on("click",function () {
         `
             <tr>
                 <th scope="col">Round ${trLength - 1}</th>
-                <th scope="col"><input class="input" type="number" value="0"></th>
-                <th scope="col"><input class="input" type="number" value="0"></th>
-                <th scope="col"><input class="input" type="number" value="0"></th>
-                <th scope="col"><input class="input" type="number" value="0"></th> 
+                <th scope="col"><input class="input p1Score" type="number" value="0"></th>
+                <th scope="col"><input class="input p2Score" type="number" value="0"></th>
+                <th scope="col"><input class="input p3Score" type="number" value="0"></th>
+                <th scope="col"><input class="input p4Score" type="number" value="0"></th> 
             </tr>
             `)
+    getTotalScore()
 })
+
+function getTotalScore() {
+
+    $("input.p1Score").each(function () {
+        let p1Score = 0
+        p1Score += $(this).val()
+        $("#player1Sum").text(p1Score)
+    })
+    $("input.p2Score").each(function () {
+        let p2Score = 0
+        p2Score += $(this).val()
+        $("#player2Sum").text(p2Score)
+    })
+    $("input.p3Score").each(function () {
+        let p3Score = 0
+        p3Score += $(this).val()
+        $("#player3Sum").text(p3Score)
+    })
+    $("input.p4Score").each(function () {
+        let p4Score = 0
+        p4Score += $(this).val()
+        $("#player4Sum").text(p4Score)
+    })
+}
+

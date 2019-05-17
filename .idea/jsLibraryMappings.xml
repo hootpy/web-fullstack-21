@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@types/bootstrap, @types/express, @types/jquery, @types/mongoose, jquery-3.3.1.slim}" />
-    <includedPredefinedLibrary name="Node.js Core" />
+    <file url="PROJECT" libraries="{@types/express, @types/jquery}" />
   </component>
 </project>
