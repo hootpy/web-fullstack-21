@@ -1,38 +1,35 @@
 let nextPageToken = null;
 let currentKeyWord = null;
-let onSearch = false;
+let enableLoad = true;
+
 
 
 $("form#search").submit(function (event) {
-    $('#result-list').empty()
-    const keyword = currentKeyWord =  $('#keyword').val()
+    event.preventDefault();
+    $('#result-list').empty();
+    const keyword = currentKeyWord =  $('#keyword').val();
     $.ajax({
         url: `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${keyword}&type=video&key=AIzaSyA9gQZ-oYomFypZN7PsupZJtOfQqA6Q3qw`,
         type: 'GET',
         success: function (data) {
-            nextPageToken = data['nextPageToken']
+            nextPageToken = data['nextPageToken'];
             if(data.items.length !== 0){
-                const listVideo = data.items
-                for (let i = 0; i < listVideo.length; i++) {
-                    let videoData = listVideo[i]
-                    const videoLink = `https://www.youtube.com/watch?v=${videoData['id']['videoId']}?autoplay=true`
-                    const thumbnails = `${videoData['snippet']['thumbnails']['default']['url']}`
-                    const videoTitle = `${videoData['snippet']['title']}`
-                    const videoDescription = `${videoData['snippet']['description']}`
-
-                    const video = `
-                                    <a class="result col-md-12" href=${videoLink} target="_blank">
-                                        <img src=${thumbnails} alt="">
-                                        <div class="video_info">
-                                            <h2 class="title">${videoTitle}</h2>
-                                            <p class="description">${videoDescription}</p>
-                                            <span>View >></span>
-                                        </div>
-                                    </a>
-                `
-                    $('#result-list').append(video)
-            }
-
+                const {items} = data;
+                for (item of items){
+                    const videoLink = `https://www.youtube.com/watch?v=${item.id.videoId}?autoplay=true`
+                    $('#result-list').append(
+                        `
+                            <a class="result col-md-12" href=${videoLink}>
+                                <img src=${item.snippet.thumbnails.high.url}>
+                                <div class="video_info">
+                                    <h2 class="title">${item.snippet.title}</h2>
+                                    <p class="description">${item.snippet.description}</p>
+                                </div>
+                            </a>
+                            
+                        `
+                    )
+                }
         } else {
                 $('#result-list').append(`
                 <div>
@@ -43,46 +40,42 @@ $("form#search").submit(function (event) {
         error: function (err) {
             console.log(err)
         }
-    })
-    event.preventDefault()
-})
+    });
+});
 
-$('#keyword').on('input',function () {
-    onSearch = true
-})
 
-setInterval(function () {
-    if (onSearch){
-        $('#result-list').empty()
-        const keyword = $('#keyword').val()
+let debounce;
+$("#keyword").on("input", function () {
+    if(debounce){
+        clearTimeout(debounce)
+    }
+
+    debounce = setTimeout(function () {
+        console.log("search");
+        $('#result-list').empty();
+        const keyword = currentKeyWord =  $('#keyword').val();
         $.ajax({
             url: `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${keyword}&type=video&key=AIzaSyA9gQZ-oYomFypZN7PsupZJtOfQqA6Q3qw`,
             type: 'GET',
             success: function (data) {
-                nextPageToken = data['nextPageToken']
-                onSearch = false
+                nextPageToken = data['nextPageToken'];
                 if(data.items.length !== 0){
-                    const listVideo = data.items
-                    for (let i = 0; i < listVideo.length; i++) {
-                        let videoData = listVideo[i]
-                        const videoLink = `https://www.youtube.com/watch?v=${videoData['id']['videoId']}?autoplay=true`
-                        const thumbnails = `${videoData['snippet']['thumbnails']['default']['url']}`
-                        const videoTitle = `${videoData['snippet']['title']}`
-                        const videoDescription = `${videoData['snippet']['description']}`
-
-                        const video = `
-                                    <a class="result col-md-12" href=${videoLink} target="_blank">
-                                        <img src=${thumbnails} alt="">
-                                        <div class="video_info">
-                                            <h2 class="title">${videoTitle}</h2>
-                                            <p class="description">${videoDescription}</p>
-                                            <span>View >></span>
-                                        </div>
-                                    </a>
-                `
-                        $('#result-list').append(video)
+                    const {items} = data;
+                    for (item of items){
+                        const videoLink = `https://www.youtube.com/watch?v=${item.id.videoId}?autoplay=true`
+                        $('#result-list').append(
+                            `
+                            <a class="result col-md-12" href=${videoLink}>
+                                <img src=${item.snippet.thumbnails.high.url}>
+                                <div class="video_info">
+                                    <h2 class="title">${item.snippet.title}</h2>
+                                    <p class="description">${item.snippet.description}</p>
+                                </div>
+                            </a>
+                            
+                        `
+                        )
                     }
-
                 } else {
                     $('#result-list').append(`
                 <div>
@@ -94,37 +87,44 @@ setInterval(function () {
                 console.log(err)
             }
         })
-    }
-},1000)
+    },500)
+})
+
+
+
+
+
+
 
 $(window).on("scroll", function() {
-    var scrollHeight = $(document).height();
-    var scrollPosition = $(window).height() + $(window).scrollTop();
-    if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+    const scrollHeight = $(document).height();
+    const scrollPosition = $(window).height() + $(window).scrollTop();
+    if (enableLoad && nextPageToken != null && (scrollHeight - scrollPosition) < 400) {
+        console.log(nextPageToken);
+        enableLoad = false;
        $.ajax({
            url: `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${currentKeyWord}&type=video&key=AIzaSyA9gQZ-oYomFypZN7PsupZJtOfQqA6Q3qw&pageToken=${nextPageToken}`,
            type: 'get',
            success: function (data) {
-               nextPageToken = data['nextPageToken']
-               const listVideo = data.items
-               for (let i = 0; i < listVideo.length; i++) {
-                   let videoData = listVideo[i]
-                   const videoLink = `https://www.youtube.com/watch?v=${videoData['id']['videoId']}?autoplay=true`
-                   const thumbnails = `${videoData['snippet']['thumbnails']['default']['url']}`
-                   const videoTitle = `${videoData['snippet']['title']}`
-                   const videoDescription = `${videoData['snippet']['description']}`
-
-                   const video = `
-                                    <a class="result col-md-12" href=${videoLink} target="_blank">
-                                        <img src=${thumbnails} alt="">
-                                        <div class="video_info">
-                                            <h2 class="title">${videoTitle}</h2>
-                                            <p class="description">${videoDescription}</p>
-                                            <span>View >></span>
-                                        </div>
-                                    </a>
-                `
-                   $('#result-list').append(video)
+               nextPageToken = data['nextPageToken'];
+               if(data.items.length !== 0){
+                   const {items} = data;
+                   for (item of items){
+                       const videoLink = `https://www.youtube.com/watch?v=${item.id.videoId}?autoplay=true`
+                       $('#result-list').append(
+                           `
+                            <a class="result col-md-12" href=${videoLink}>
+                                <img src=${item.snippet.thumbnails.high.url}>
+                                <div class="video_info">
+                                    <h2 class="title">${item.snippet.title}</h2>
+                                    <p class="description">${item.snippet.description}</p>
+                                </div>
+                            </a>
+                            
+                        `
+                       )
+                   }
+                   enableLoad = true;
                }},
            error: function (err) {
                console.log(err)
