@@ -24,7 +24,6 @@ app.get("/",function (req,res) {
 
 app.post("/create-game",function (req,res) {
     const {playerList} = req.body
-    console.log(playerList)
     GameModel.create({
         playerName: playerList,
     },function (err,doc) {

@@ -88,22 +88,22 @@ function getTotalScore() {
 
     $("input.p1Score").each(function () {
         let p1Score = 0
-        p1Score += $(this).val()
+        p1Score += $(this).text()
         $("#player1Sum").text(p1Score)
     })
     $("input.p2Score").each(function () {
         let p2Score = 0
-        p2Score += $(this).val()
+        p2Score += $(this).text()
         $("#player2Sum").text(p2Score)
     })
     $("input.p3Score").each(function () {
         let p3Score = 0
-        p3Score += $(this).val()
+        p3Score += $(this).text()
         $("#player3Sum").text(p3Score)
     })
     $("input.p4Score").each(function () {
         let p4Score = 0
-        p4Score += $(this).val()
+        p4Score += $(this).text()
         $("#player4Sum").text(p4Score)
     })
 }
