@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91aa071d-34a5-44ff-bbe1-5297bb58dfa8" name="Default Changelist" comment="nothing">
-      <change afterPath="$PROJECT_DIR$/hotgirl/backend/db.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotgirl/backend/models/postModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotgirl/backend/models/userModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotgirl/backend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotgirl/backend/routers/userApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotgirl/backend/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fullstack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fullstack.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="91aa071d-34a5-44ff-bbe1-5297bb58dfa8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-hack/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-hack/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-hack/view/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-hack/view/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,50 +17,7 @@
     <favorites_list name="Web 21" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hotgirl/backend/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-              <folding>
-                <element signature="e#326#351#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hotgirl/backend/routers/userApi.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hotgirl/backend/models/postModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hotgirl/backend/db.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="180">
-                <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -155,10 +102,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="809" />
+    <option name="height" value="709" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -173,38 +120,8 @@
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="Web 21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/GitHub/Web 21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Web 21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/GitHub/Web 21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="hotgirl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Web 21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/GitHub/Web 21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="hotgirl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="backend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Web 21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/GitHub/Web 21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="hotgirl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="backend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Web 21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/GitHub/Web 21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="hotgirl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="backend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="routers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Web 21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/GitHub/Web 21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="session 4" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="web-fullstack-21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/GitHub/web-fullstack-21" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -326,11 +243,28 @@
       <workItem from="1558084298576" duration="2547000" />
       <workItem from="1558095607511" duration="599000" />
       <workItem from="1558096247552" duration="7561000" />
+      <workItem from="1558936905024" duration="226000" />
+      <workItem from="1558960271349" duration="86000" />
     </task>
+    <task id="LOCAL-00001" summary="nothing">
+      <created>1558937071437</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558937071438</updated>
+    </task>
+    <task id="LOCAL-00002" summary="nothing">
+      <created>1558937110841</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558937110841</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102512000" />
+    <option name="totallyTimeSpent" value="102824000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,9 +276,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="809" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="709" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49688148" visible="true" weight="0.13812543" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49688148" visible="true" weight="0.15433404" />
       <window_info id="Structure" order="1" sideWeight="0.5006974" side_tool="true" weight="0.24947146" />
       <window_info id="Favorites" order="2" sideWeight="0.5031185" side_tool="true" weight="0.24947146" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -353,10 +287,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32914925" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32901135" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32914925" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32914925" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32901135" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32901135" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -384,6 +318,50 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="nothing" />
+    <option name="LAST_COMMIT_MESSAGE" value="nothing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/nodejs/test.txt">
@@ -441,9 +419,6 @@
           <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/session 4question.json" />
     <entry file="file://$PROJECT_DIR$/homework/session 3/server.js">
@@ -663,16 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hotgirl/backend/db.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodejs/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-95">
@@ -709,17 +674,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hotgirl/backend/routers/userApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="510">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hotgirl/backend/db.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hotgirl/backend/models/postModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
